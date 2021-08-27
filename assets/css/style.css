@@ -1,5 +1,6 @@
     body {
         font-family: 'Roboto', sans-serif;
+        /* outline: none !important; */
     }
     
     .header {
@@ -190,6 +191,7 @@
         border: 1px solid transparent;
         padding-right: 0.6rem;
         padding-left: 0.6rem;
+        outline: none !important;
     }
     
     .order-cnt {
@@ -207,8 +209,16 @@
     
     .form-select {
         color: rgb(97, 97, 97);
-        outline: none;
-        box-shadow: none;
+        outline: none !important;
+        box-shadow: none !;
+        box-shadow: 3px 10px 15px 3px rgb(0 0 0 / 8%) !important;
+        border: 1px solid transparent;
+    }
+    
+    .form-select:focus {
+        outline: none !important;
+        box-shadow: 3px 10px 15px 3px rgb(0 0 0 / 8%) !important;
+        border: 1px solid transparent;
     }
     
     .order-amount p {

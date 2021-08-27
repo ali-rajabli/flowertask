@@ -1,13 +1,20 @@
 // Button plus minus
 var orderCount = $('#order-cnt').text()
+var price = $('#price')
 
 $('.plus-btn').on('click', () => {
-    orderCount++;
+    if (orderCount < 999) {
+        orderCount++;
+    }
     $('#order-cnt').text(orderCount)
+    $(price).text(2250 * orderCount)
 })
 $('.minus-btn').on('click', () => {
-    orderCount--;
+    if (orderCount > 1) {
+        orderCount--;
+    }
     $('#order-cnt').text(orderCount)
+    $(price).text(2250 * orderCount)
 })
 
 // Slider Plugin
