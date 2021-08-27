@@ -153,7 +153,7 @@
     }
     
     .box-about-div {
-        cursor: pointer;
+        cursor: default;
         text-align: center;
         background: #FFF;
         color: #e43b59;
@@ -232,7 +232,7 @@
     }
     
     .main-price-about {
-        cursor: auto;
+        cursor: default;
         width: 190px;
         height: 50px;
         background-color: #f0385c;
